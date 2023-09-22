@@ -1,0 +1,43 @@
+.challenges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .challenges-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 600px;
+  
+      li {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  
+        .challenge-title {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+  
+        .challenge-description {
+          margin-bottom: 10px;
+        }
+  
+        .challenge-points {
+          font-weight: bold;
+        }
+  
+        .challenge-rules {
+          margin-top: 10px;
+          font-size: 0.9rem;
+          font-style: italic;
+          color: #666;
+        }
+      }
+    }
+  }
+  

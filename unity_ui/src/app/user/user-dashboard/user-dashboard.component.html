@@ -1,0 +1,25 @@
+<div class="user-dashboard">
+    <div class="user-info">
+      <h2>Your Progress</h2>
+      <p>Points: {{ userPoints }}</p>
+      <p>Level: {{ userLevel }}</p>
+      <p>Challenges Completed: {{ challengesCompleted }} / {{ challengesTotal }}</p>
+      <button (click)="redeemPoints()">Redeem Points</button>
+      <button (click)="purchasePoints()">Purchase Points</button>
+      <button (click)="enterPoints()">Enter Points</button>
+      <button (click)="searchEvents()">Search Events</button>
+    </div>
+    <div class="friends-info">
+      <h2>Friends' Progress</h2>
+      <ul>
+        <li *ngFor="let friend of friendsProgress">{{ friend.name }}: {{ friend.progress }}%</li>
+      </ul>
+    </div>
+    <div class="trending-info">
+      <h2>Trending Challenges</h2>
+      <ul>
+        <li *ngFor="let challenge of trendingChallenges">{{ challenge }}</li>
+      </ul>
+    </div>
+  </div>
+  

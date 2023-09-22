@@ -1,0 +1,111 @@
+.social-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    .friend-requests {
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ccc;
+          padding: 10px 0;
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          div {
+            font-weight: bold;
+          }
+          
+          button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            &:hover {
+              background-color: #3e8e41;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ccc;
+          padding: 10px 0;
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          div {
+            font-weight: bold;
+          }
+          
+          button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            &:hover {
+              background-color: #3e8e41;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          margin-bottom: 10px;
+          
+          div {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+}      
+      

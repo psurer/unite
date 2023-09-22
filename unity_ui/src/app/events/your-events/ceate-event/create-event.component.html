@@ -1,0 +1,29 @@
+<form class="event-form">
+  <mat-form-field class="event-form-field">
+    <input matInput placeholder="Event Name" formControlName="name" required />
+  </mat-form-field>
+  <mat-form-field class="event-form-field">
+    <input matInput placeholder="Subtitle" formControlName="subtitle" />
+  </mat-form-field>
+  <mat-form-field class="event-form-field">
+    <input
+      matInput
+      [matDatepicker]="picker"
+      placeholder="Date"
+      formControlName="date"
+      required
+    />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="event-form-field">
+    <textarea matInput placeholder="Description" formControlName="description"></textarea>
+  </mat-form-field>
+  <mat-form-field class="event-form-field">
+    <input matInput placeholder="Image Path" formControlName="imagePath" required />
+  </mat-form-field>
+  <div class="event-form-actions">
+    <button mat-raised-button color="accent" (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Create Event</button>
+  </div>
+</form>

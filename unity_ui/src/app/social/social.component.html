@@ -1,0 +1,22 @@
+<div class="social-page">
+    <div class="friend-requests">
+      <h2>Friend Requests</h2>
+      <ul>
+        <li *ngFor="let request of friendRequests">
+          <div>{{ request.name }}</div>
+          <button (click)="acceptFriendRequest(request)">Accept</button>
+          <button (click)="declineFriendRequest(request)">Decline</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="newsfeed">
+      <h2>Newsfeed</h2>
+      <ul>
+        <li *ngFor="let activity of newsfeed">
+          <div>{{ activity.name }} completed {{ activity.challenge }} and earned {{ activity.points }} points!</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

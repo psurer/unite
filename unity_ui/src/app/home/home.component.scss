@@ -1,0 +1,118 @@
+/* Style the hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.hero-content .hero-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #3367D6;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #4D8AFF;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the benefits section */
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.benefits-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333333;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.benefits-item {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+}
+
+.benefits-item img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.benefits-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.benefits-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #888888;
+}

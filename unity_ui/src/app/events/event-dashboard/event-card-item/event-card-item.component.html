@@ -1,0 +1,45 @@
+<!-- <a [routerLink]="['/event-detail', myEvent.id]" routerLinkActive="active" class="list-event-item">
+  <mat-card class="event-card">
+    <div class="event-card-image-wrapper">
+      <img mat-card-image [src]="myEvent.imagePath" alt ='' [alt]="myEvent.name" role="img">
+      <div class="event-card-overlay">
+        <mat-icon>favorite_border</mat-icon>
+      </div>
+    </div>
+    <mat-card-content>
+      <h2 class="event-card-title">{{ myEvent.name }}</h2>
+      <h3 class="event-card-subtitle">{{ myEvent.subtitle }}</h3>
+      <p class="event-card-date">{{ myEvent.date }}</p>
+      <p class="event-card-description">{{ myEvent.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</a> -->
+<a [routerLink]="['/event-detail', myEvent.id]" routerLinkActive="active" class="list-event-item">
+  <mat-card class="event-card">
+    <div class="event-card-image-wrapper">
+      <img mat-card-image [src]="myEvent.imagePath" alt ='' [alt]="myEvent.name" role="img">
+      <div class="event-card-overlay">
+        <mat-icon>favorite_border</mat-icon>
+        <p class="event-card-likes">100 likes</p>
+      </div>
+    </div>
+    <mat-card-content>
+      <h2 class="event-card-title">{{ myEvent.name }}</h2>
+      <h3 class="event-card-subtitle">{{ myEvent.subtitle }}</h3>
+      <p class="event-card-date">{{ myEvent.date }}</p>
+      <p class="event-card-description">{{ myEvent.description }}</p>
+      <div class="event-card-actions">
+        <button class="event-card-action">
+          <mat-icon>share</mat-icon>
+          Share
+        </button>
+        <button class="event-card-action">
+          <mat-icon>bookmark</mat-icon>
+          Bookmark
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</a>
+
+

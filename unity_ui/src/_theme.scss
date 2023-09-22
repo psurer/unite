@@ -1,0 +1,102 @@
+@import '@angular/material/theming';
+@import '@angular/material';
+
+// Global Styles
+
+// Colors
+$primary-color: #00bfff;
+$secondary-color: #00ff00;
+$tertiary-color: #0000ff;
+$neutral-color: #000000;
+
+// Fonts
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$body-font-color: #333333;
+
+// Sizes
+$base-font-size: 16px;
+$base-padding: 16px;
+$base-margin: 16px;
+
+// Spacing
+$gutter: 16px;
+
+// Typography
+$heading-font-size: 24px;
+$body-font-size: 16px;
+$paragraph-font-size: 14px;
+
+// Buttons
+$button-background-color: $primary-color;
+$button-color: #fff;
+
+// Inputs
+$input-background-color: #ffffff;
+$input-border-color: #000000;
+$input-color: #000000;
+
+// Labels
+$label-color: #000000;
+
+// Links
+$link-color: $primary-color;
+
+// Headers
+$header-font-size: 24px;
+$header-color: #000000;
+
+// Footer
+$footer-font-size: 16px;
+$footer-color: #000000;
+
+// Icons
+$icon-size: 24px;
+$icon-color: #000000;
+
+// Backgrounds
+$background-color: #ffffff;
+
+// Borders
+$border-radius: 4px;
+
+// Shadows
+$shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+// Animations
+$animation-duration: 0.5s;
+
+// Transitions
+$transition-duration: 0.2s;
+
+// Media Queries
+@media (max-width: 768px) {
+  $base-font-size: 14px;
+  $base-padding: 12px;
+  $base-margin: 12px;
+}
+
+@media (max-width: 576px) {
+  $base-font-size: 12px;
+  $base-padding: 10px;
+  $base-margin: 10px;
+}
+
+
+
+// Defining the primary and accent colors
+// $my-app-primary: mat-palette($mat-indigo);
+// $my-app-accent: mat-palette($mat-deep-purple, A200, A100, A400);
+
+// Creating the theme using the primary and accent colors
+// $my-app-theme: mat-light-theme(
+//   (   color: (
+//       primary: $my-app-primary,
+//       accent: $my-app-accent,
+//     ),
+//   )
+// );
+
+// Exporting the theme
+// @include mat-core();
+// @include angular-material-theme($theme);

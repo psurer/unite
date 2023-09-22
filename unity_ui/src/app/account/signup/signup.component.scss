@@ -1,0 +1,77 @@
+.divLoginPageContentContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 500px;
+    flex: 1 1 0%;
+    overflow: auto;
+    margin: auto;
+}
+
+.loginContainer {
+    display: flex;
+    display: block;
+    width: 350px;
+    margin: auto;
+}
+
+.h2Title {
+    text-align: center;
+    font-size: 30;
+    font-weight: bold;
+}
+
+.formInputContainer {
+    display: flex;
+    position: relative;
+    border-radius: 2px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 2px solid rgba(22, 24, 35, 0.12);
+    line-height: 100%;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.divInputContainer {
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.loginLinkText {
+    color: red;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.divContainer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 18px;
+    border-top: 2px solid silver;
+}
+
+.signup-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 9px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(36, 29, 55, 0.05);
+    color: rgb(68, 68, 69);
+    transition: all 0.3s ease;
+
+&:hover {
+    background-color: rgba(4, 15, 233, 0.494);
+  }
+}

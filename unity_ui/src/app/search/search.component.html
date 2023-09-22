@@ -1,0 +1,20 @@
+<div class="search">
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="query" placeholder="Search...">
+      <select [(ngModel)]="type" aria-label="Search Type">
+        <option value="event">Events</option>
+        <option value="challenge">Challenges</option>
+        <option value="other">Other</option>
+      </select>
+      <button (click)="search()">Search</button>
+    </div>
+    <div class="search-results">
+      <ul>
+        <li *ngFor="let result of results">
+          <a routerLink="{{result.type}}/{{result.id}}">{{result.title}}</a>
+          <p>{{result.description}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

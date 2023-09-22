@@ -1,0 +1,23 @@
+<div class="ratings-container">
+    <h3>Rate and Review</h3>
+    <div class="user-rating">
+        <p>Your rating:</p>
+        <app-star-rating [rating]="userRating" (ratingChange)="onRatingChange($event)"></app-star-rating>
+
+      </div>
+      
+    <div>
+      <label for="review-textarea">Review:</label>
+      <textarea id="review-textarea" [(ngModel)]="userReview" name="review-textarea"></textarea>
+    </div>
+    <button type="button" (click)="onSubmit()">Submit</button>
+    <hr>
+    <h3>Reviews</h3>
+    <div class="reviews-container">
+      <div *ngFor="let review of reviews">
+        <p>{{ review }}</p>
+      </div>
+    </div>
+  </div>
+  
+  

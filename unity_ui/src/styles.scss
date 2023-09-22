@@ -1,0 +1,188 @@
+/* Global styles */
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Colors */
+$primary-color: #00bfff;
+$secondary-color: #00ff00;
+$tertiary-color: #0000ff;
+$neutral-color: #000000;
+
+/* Header */
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+
+  /* Logo */
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+  }
+
+  /* Navigation */
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-left: 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #777;
+  }
+}
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// // @use '@angular/material' as mat;
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// // $unity_ui-primary: mat.define-palette(mat.$indigo-palette);
+// // $unity_ui-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// // The warn palette is optional (defaults to red).
+// // $unity_ui-warn: mat.define-palette(mat.$red-palette);
+
+// // Create the theme object. A theme consists of configurations for individual
+// // theming systems such as "color" or "typography".
+// // $unity_ui-theme: mat.define-light-theme((
+// //   color: (
+// //     primary: $unity_ui-primary,
+// //     accent: $unity_ui-accent,
+// //     warn: $unity_ui-warn,
+// //   )
+// // ));
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// // @include mat.all-component-themes($unity_ui-theme);
+
+// @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+// // Import Angular Material theming
+// // @import '@angular/material/theming';
+
+// // Define the palettes for your theme using the Material color tool
+// // @import 'theme';
+
+
+// // Create the theme object
+// // $theme: mat-light-theme($primary, $accent);
+
+// // Apply the theme to your application
+// // @include angular-material-theme($theme);
+// $bg-color: #f8f8ff;
+// $shadow-color: #c9c9c9;
+// $box-color: #313ffff0;
+// $text-color: #333333;
+
+// // Global styles
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   font-family: 'Roboto', sans-serif;
+// }
+// button, mat-icon-button {
+//   background-color: #9b4dff;
+//   color: #fff;
+//   border: none;
+// }
+
+// button:hover, mat-icon-button:hover {
+//   background-color: #4d0099;
+// }
+
+// a:hover {
+//   color: #9b4dff;
+// }
+
+// .mat-card {
+//   background-color: #fff;
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+// }
+
+// .mat-card-title {
+//   color: #333;
+//   font-weight: bold;
+// }
+
+// .mat-card-subtitle {
+//   color: #666;
+// }
+
+// .mat-card-content {
+//   color: #333;
+// }
+
+// .mat-list-item {
+//   color: #fff;
+// }
+
+// .mat-expansion-panel-header {
+//   background-color: #1A1B41;
+//   color: #fff;
+// }
+
+// .mat-expansion-panel-content {
+//   background-color: #fff;
+// }
+// // Apply theme to Angular Material components
+// // @include mat-core();
+
+// // App styles
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

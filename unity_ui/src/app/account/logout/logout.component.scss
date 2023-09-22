@@ -1,0 +1,21 @@
+.logoutButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 9px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(36, 29, 55, 0.05);
+    color: rgb(68, 68, 69);
+    transition: all 0.3s ease;
+
+&:hover {
+    background-color: rgba(4, 15, 233, 0.494);
+  }
+}

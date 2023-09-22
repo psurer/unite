@@ -1,0 +1,87 @@
+<div class="divLoginPageContentContainer">
+  <div class="loginContainer">
+    <!-- we create a local reference and give it any name we want and we set it equal to ngForm
+    this gives us access to the Angular form object and we can use the authForm reference below -->
+    <form #authForm="ngForm">
+      <h2 class="h2Title">Sign Up</h2>
+      <!-- ask for age verification purposes and cool stuff -->
+      <!-- 
+        <div class="">When’s your birthday?
+        </div> 
+    -->
+      <div class="divInputContainer">
+        <input
+          matInput
+          class="form-control"
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          class="formInputContainer"
+          value=""
+          required
+        />
+      </div>
+      <div class="divInputContainer">
+        <input
+          matInput
+          class="form-control"
+          type="text"
+          placeholder="Last Name"
+          name="lastName"
+          class="formInputContainer"
+          value=""
+          required
+        />
+      </div>
+      <div class="divInputContainer">
+        <div class="divInputContainer">
+          <div class="divInputContainer">
+            <input
+              matInput
+              type="email"
+              class="form-control"
+              placeholder="Email address"
+              name="email"
+              class="formInputContainer"
+              value=""
+              required
+              email
+            />
+          </div>
+        </div>
+        <div class="divInputContainer">
+          <div class="divInputContainer">
+            <input
+              matInput
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+              name="password"
+              minlength="6"
+              class="formInputContainer"
+              value=""
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+      <button
+        mat-button
+        class="loginButton" 
+        type="submit"
+        disabled="false"
+        class="">
+        Submit
+      </button>
+    </div>
+    </form>
+    <div class="divContainer">
+      <a mat-button href="login" color:red>Already have an account? Login!</a>
+    </div>
+  </div>
+</div>
+
+        <!-- [disabled="!authForm.valid"
+        ] -->

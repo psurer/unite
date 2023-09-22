@@ -1,0 +1,15 @@
+<div class="challenges">
+    <h2>Challenges</h2>
+    <ul>
+      <li *ngFor="let challenge of challenges">
+        <h3>{{ challenge.title }}</h3>
+        <p>{{ challenge.description }}</p>
+        <ul>
+          <li *ngFor="let rule of challenge.rules">{{ rule }}</li>
+        </ul>
+        <p>Points: {{ challenge.points }}</p>
+        <button (click)="selectChallenge(challenge)">Select Challenge</button>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,51 @@
+<div class="leaderboard">
+    <div class="leaderboard-section">
+      <h2>Top Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+            <!-- Section displaying the top teams -->
+          <tr *ngFor="let user of topUsers">
+            <td>{{ user.username }}</td>
+            <td>{{ user.points }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Loop through the topTeams array and display each team's name and points -->
+    <div class="leaderboard-section">
+      <h2>Top Teams</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+             <!-- Section displaying the top teams -->
+          <tr *ngFor="let team of topTeams">
+            <td>{{ team.name }}</td>
+            <td>{{ team.points }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+<!-- /* *** The tr tag is a container element that doesn't display anything on its own,
+     but instead provides a context for the td or th elements it contains. 
+     The tr element can also have attributes such as class or style that can be used to control the 
+     appearance of the row or apply styles to specific cells within it.
+
+    Note also that we use the tr element in conjunction with a *ngFor directive to 
+    qdynamically generate rows in the table based on the topUsers and topTeams 
+    arrays defined in the component class. 
+    For each user or team in the array, a new row is created with two cells, 
+    one displaying the username or team name and the other displaying the points
+    they have earned. *** */ -->

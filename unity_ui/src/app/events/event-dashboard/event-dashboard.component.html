@@ -1,0 +1,41 @@
+<div class="event-cards-container">
+  <div class="event-cards-content">
+    <h1 class="events-container-title">Events in {{ userLocation }}</h1>
+    <div class="events-drop-down-container">
+      <h2 class="events-drop-down-label">Filter by:</h2>
+      <div class="events-drop-down-item">
+        <label for="date-select">Date:</label>
+        <select
+          id="date-select"
+          class="events-drop-down-select"
+          [(ngModel)]="selectedDate"
+          aria-label="Select event date"
+        >
+          <option value="">Date</option>
+          <option *ngFor="let date of dates" [value]="date">{{ date }}</option>
+        </select>
+      </div>
+
+      <div class="events-drop-down-item">
+        <label for="distance">Distance (in miles):</label>
+        <select
+          id="distance"
+          class="events-drop-down-select"
+          [(ngModel)]="selectedDistance"
+        >
+          <option value="">Distance (in miles)</option>
+          <option *ngFor="let distance of distances" [value]="distance">
+            {{ distance }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="event-cards">
+      <app-event-card-item
+        class="event-card-shadow"
+        *ngFor="let eventElement of events"
+        [myEvent]="eventElement"
+      ></app-event-card-item>
+    </div>
+  </div>
+</div>

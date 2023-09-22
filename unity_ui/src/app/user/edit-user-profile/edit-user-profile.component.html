@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+        <h2 class="mb-3">Edit Profile</h2>
+        <div class="form-group">
+          <label for="profilePic">Profile Picture URL</label>
+          <input type="text" class="form-control" formControlName="profilePic" id="profilePic" placeholder="Enter profile picture URL">
+        </div>
+        <div class="form-group">
+          <label for="userName">Username</label>
+          <input type="text" class="form-control" formControlName="userName" id="userName" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" id="firstName" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName" id="lastName" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

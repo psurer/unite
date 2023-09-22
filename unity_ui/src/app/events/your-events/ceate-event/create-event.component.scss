@@ -1,0 +1,117 @@
+// // @import '~@angular/material/theming';
+// // @include mat-core();
+
+// // $primary: mat-palette($mat-blue, 600);
+// // $accent: mat-palette($mat-blue-grey, 500);
+// // $warn: mat-palette($mat-red, 500);
+
+// // $theme: mat-light-theme(
+// //   (
+// //     color: (
+// //       primary: $primary,
+// //       accent: $accent,
+// //       warn: $warn
+// //     )
+// //   )
+// // );
+
+// // // Global styles
+// // html,
+// // body {
+// //   height: 100%;
+// // }
+
+// // body {
+// //   margin: 0;
+// //   font-family: Roboto, sans-serif;
+// // }
+// // @import '@angular/material/theming';
+// // Button styles
+// .event-button {
+//   // background-color: mat-color($accent);
+//   color: white;
+//   border-radius: 4px;
+//   padding: 12px 24px;
+//   font-size: 16px;
+//   font-weight: 500;
+//   letter-spacing: 0.025em;
+//   text-transform: uppercase;
+//   transition: background-color 0.2s;
+
+//   &:hover {
+//     // background-color: darken(mat-color($accent), 10%);
+//   }
+// }
+
+// // Card styles
+// .event-card {
+//   margin: 16px;
+//   border-radius: 4px;
+//   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+//   overflow: hidden;
+//   transition: transform 0.2s;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//   }
+
+//   .event-card-image {
+//     height: 200px;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .event-card-content {
+//     padding: 16px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     .event-card-title {
+//       font-size: 24px;
+//       font-weight: 500;
+//       margin-bottom: 8px;
+//     }
+
+//     .event-card-subtitle {
+//       font-size: 16px;
+//       font-weight: 400;
+//       margin-bottom: 8px;
+//     }
+
+//     .event-card-description {
+//       font-size: 14px;
+//       font-weight: 300;
+//       margin-bottom: 16px;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       display: -webkit-box;
+//       -webkit-line-clamp: 3;
+//       -webkit-box-orient: vertical;
+//     }
+
+//     .event-card-date {
+//       font-size: 14px;
+//       font-weight: 400;
+//       margin-bottom: 8px;
+//     }
+//   }
+// }
+
+// // Form styles
+// .event-form {
+//   max-width: 600px;
+//   margin: 16px auto;
+
+//   .event-form-field {
+//     width: 100%;
+//     margin-bottom: 16px;
+//   }
+
+//   .event-form-actions {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 16px;
+//   }
+// }

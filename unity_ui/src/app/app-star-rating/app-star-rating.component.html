@@ -1,0 +1,11 @@
+<div class="star-rating">
+    <i class="fa" [class.fa-star-o]="rating < 1" [class.fa-star-half-o]="rating >= 1 && rating < 2" [class.fa-star]="rating >= 2"></i>
+    <i class="fa" [class.fa-star-o]="rating < 3" [class.fa-star-half-o]="rating >= 3 && rating < 4" [class.fa-star]="rating >= 4"></i>
+    <i class="fa" [class.fa-star-o]="rating < 5" [class.fa-star-half-o]="rating >= 5 && rating < 6" [class.fa-star]="rating >= 6"></i>
+    <i class="fa" [class.fa-star-o]="rating < 7" [class.fa-star-half-o]="rating >= 7 && rating < 8" [class.fa-star]="rating >= 8"></i>
+    <i class="fa" [class.fa-star-o]="rating < 9" [class.fa-star-half-o]="rating >= 9 && rating < 10" [class.fa-star]="rating >= 10"></i>
+  </div>
+  
+<!-- This component uses font-awesome icons to display a rating out of 10.
+It takes in a rating input from the parent component and displays the appropriate
+number of stars based on the rating. -->
