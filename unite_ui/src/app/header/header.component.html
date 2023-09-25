@@ -3,7 +3,7 @@
     <div class="logo-container">
       <a routerLink="/" class="logo-link">
         <img src="{{ logoUrl }}" alt="Logo" class="unity-logo" />
-        <h1 class="unity-logo-text">UNITY</h1>
+        <h1 class="unity-logo-text">Unité</h1>
       </a>
     </div>
     <div class="spacer"></div>
@@ -13,7 +13,7 @@
         <mat-form-field>
           <input matInput type="text" placeholder="Search..." />
         </mat-form-field>
-        <a mat-button class="search-button">SEARCH</a>
+        <a mat-button class="search-button">Recherche</a>
       </div>
     </div>
 
@@ -23,13 +23,13 @@
       routerLink="/about"
       routerLinkActive="active"
       class="unity-header-item unity-header-button"
-      >About</a
+      >À propos</a
     >
     <a
       routerLink="/events"
       routerLinkActive="active"
       class="unity-header-item unity-header-button"
-      >Events</a
+      >Événements</a
     >
     <ng-container *ngIf="!isLoggedIn; else authenticatedNav">
       <a
@@ -37,7 +37,7 @@
         routerLink="/login"
         routerLinkActive="active"
         class="login"
-        >LOGIN</a
+        >Connexion</a
       >
       <a
         mat-button
@@ -45,7 +45,7 @@
         routerLinkActive="active"
         class="unity-header-button signup"
 
-        >GET STARTED </a
+        >COMMENCEZ </a
       >
     </ng-container>
     <ng-template #authenticatedNav>

@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, BehaviorSubject, throwError } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { Buffer } from 'buffer';
-// import { Buffer } from 'buffer';
 // we use the tap operator ( an operators provided by the RxJS library ) that allow us to manipulate or transform data emitted by an observable stream.
 // tap allows us to perform actions like logging, error handling, or triggering other actions based on the emitted data.
 // we use interface to define the structure of the response objects for the signup and login methods
@@ -33,48 +32,32 @@ export class AuthService {
   );
 
   // we use this observable to emit authentication status changes
-  loggedInStatusChanged: Observable<boolean> = this.isAuthenticatedSubject.asObservable();
+  loggedInStatusChanged: Observable<boolean> =
+    this.isAuthenticatedSubject.asObservable();
 
   constructor(private http: HttpClient) {}
 
   //method to signup new user
   signup(email: string, password: string): Observable<SignupResponse> {
-    return this.http.post<SignupResponse>(`${this.API_URL}/auth/signup`, {
+    return this.http.post<SignupResponse>('/api/auth/signup', {
       email,
       password,
-    }).pipe(
-      catchError(this.handleError)
-    );
+    });
   }
-
-  login(email: string, password: string): Observable<LoginResponse> {
-    return this.http.post<LoginResponse>(`${this.API_URL}/auth/login`, { email,password }).pipe(
-      tap((response) => {
-        localStorage.setItem(this.TOKEN_KEY, response.token);
-        this.isAuthenticatedSubject.next(true);
-      }),
-      catchError(this.handleError)
-    );
-  }
-  // signup(email: string, password: string): Observable<SignupResponse> {
-  //   return this.http.post<SignupResponse>('/api/auth/signup', {
-  //     email,
-  //     password,
-  //   });
-  // }
 
   // method to login user
-  // login(email: string, password: string): Observable<LoginResponse> {
-  //   return this.http.post<LoginResponse>('/api/auth/login', { email, password })
-  //     .pipe(
-  //       tap((response) => {
-  //         // we store the returned token in local storage
-  //         localStorage.setItem(this.TOKEN_KEY, response.token);
-  //         // this will emit a change in authentication status
-  //         this.isAuthenticatedSubject.next(true);
-  //       })
-  //     );
-  // }
+  login(email: string, password: string): Observable<LoginResponse> {
+    return this.http
+      .post<LoginResponse>('/api/auth/login', { email, password })
+      .pipe(
+        tap((response) => {
+          // we store the returned token in local storage
+          localStorage.setItem(this.TOKEN_KEY, response.token);
+          // this will emit a change in authentication status
+          this.isAuthenticatedSubject.next(true);
+        })
+      );
+  }
 
   // method to log out a user
   logout(): void {
