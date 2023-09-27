@@ -8,7 +8,7 @@ import { EventModel } from '../models/event.model';
 })
 export class EventService {
 
-  private apiUrl = 'https://localhost:3000/events'; // replace this with your backend API endpoint
+  private apiUrl = 'https://localhost:3000/events'; // replace this with backend API endpoint
   public events: EventModel[] = [];
 
   constructor(private http: HttpClient) { 
